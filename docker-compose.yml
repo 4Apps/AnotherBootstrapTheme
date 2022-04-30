@@ -1,0 +1,9 @@
+services:
+    # Develop
+    develop:
+        build:
+            context: ./docker/develop
+        ports:
+            - "5432:8080"
+        volumes:
+            - ./:/srv/sites/web:cached
